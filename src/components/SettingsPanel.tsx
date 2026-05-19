@@ -153,6 +153,13 @@ export function SettingsPanel({
               setConfigValue("externalFileAutoSave", checked)
             }
           />
+          <ToggleRow
+            label="记住小窗尺寸"
+            checked={config.rememberSurfaceSize}
+            onChange={(checked) =>
+              setConfigValue("rememberSurfaceSize", checked)
+            }
+          />
         </section>
 
         <section className="space-y-2">
